@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Técnico Renault - Control de Asistencia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        
+        <header>
+            <h1>INSTITUTO TÉCNICO RENAULT</h1>
+            <h2>SISTEMA ACADÉMICO</h2>
+        </header>
+
+        <div class="top-row">
+            
+         
+            <div class="title-section">
+                <h3>Registro de<br>Asistencia</h3>
+                <div class="filter-pills">
+                    <div class="pill-select">
+                        <select id="curso">
+                            <option value="">Curso</option>
+                            <option value="4">4° Programación</option>
+                            <option value="5">5° Programación</option>
+                            <option value="6">6° Programación</option>
+                        </select>
+                    </div>
+                    <div class="pill-input">
+                        <input type="date" id="fecha">
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="announcements-section">
+                <h3>Anuncios Proximos</h3>
+                <div class="announcements-oval">
+                    <p>Feriado 20/10</p>
+                    <p>Acto dia de la raza 14/10</p>
+                </div>
+            </div>
+
+        </div>
+
+      
+        <main class="white-card">
+
+        
+            <div id="lista-alumnos" class="students-list">
+
+                <div class="student-row">
+                    <div class="student-pill">
+                        <span class="student-num">01</span>
+                        <span class="student-name">Jose Donnet</span>
+                    </div>
+                    <div class="attendance-btn-group">
+                        <button data-value="P">P</button>
+                        <button data-value="A">A</button>
+                        <button data-value="T">T</button>
+                    </div>
+                </div>
+
+                <div class="student-row">
+                    <div class="student-pill">
+                        <span class="student-num">02</span>
+                        <span class="student-name">Ciro Fontana</span>
+                    </div>
+                    <div class="attendance-btn-group">
+                        <button data-value="P">P</button>
+                        <button data-value="A">A</button>
+                        <button data-value="T">T</button>
+                    </div>
+                </div>
+
+                <div class="student-row">
+                    <div class="student-pill">
+                        <span class="student-num">03</span>
+                        <span class="student-name">Ruben Velazquez</span>
+                    </div>
+                    <div class="attendance-btn-group">
+                        <button data-value="P">P</button>
+                        <button data-value="A">A</button>
+                        <button data-value="T">T</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-footer">
+                
+                <div class="summary-counts">
+                    <p><strong id="cnt-presentes">02</strong> Presentes (P)</p>
+                    <p><strong id="cnt-ausentes">01</strong> Ausentes (A)</p>
+                    <p><strong id="cnt-tardes">0</strong> Llegadas tarde (T)</p>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="btn-limpiar" class="btn-text">Limpiar</button>
+                    <button id="btn-guardar" class="btn-black">Guardar Asistencia</button>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+   
+    <div id="mensaje"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
